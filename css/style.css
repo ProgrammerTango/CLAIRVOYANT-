@@ -1014,15 +1014,24 @@ color: #aa8453;
 .logo {
     padding: 0;
 }
-.logo-img {
-    width: 140px;
-    margin-bottom: 0px;
-}
+
 .dropdown .nav-link i {
     padding-left: 0px;
     font-size: 8px;
     color: #fff;
 }
+.logo-wrapper .logoC {
+    height: 90px; /* Height of the logo */
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+/* Optional: additional styling for the logo image */
+.logo-wrapper .logoC img {
+    height: 100%; /* Ensures the logo fits within the header height */
+    width: auto; /* Maintains aspect ratio */
+}
+
 .navbar .dropdown-menu .dropdown-item {
     padding: 7px 0;
     font-size: 15px;
