@@ -39,13 +39,13 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown"> <a class="nav-link active dropdown-toggle" href="index.html">Home <i class=""></i></a>                    </li>
-
+  
                     </li>
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Applications/career <i class="ti-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="rooms.html" class="dropdown-item"><span>SOME PAST RISK CONSULTING CLIENTS</span></a></li>
-                            <li><a href="rooms2.html" class="dropdown-item"><span>EXPERIENCE</span></a></li>
+                            <li><a href="#" class="dropdown-item"><span>Some Past Risk Clients</span></a></li>
+                            <li><a href="#" class="dropdown-item"><span>Careers</span></a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Returns <i class="ti-angle-down"></i></a>
@@ -59,9 +59,9 @@
 
                     <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Blog <i class="ti-angle-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="blog.html" class="dropdown-item"><span>Blog 1</span></a></li>
-                            <li><a href="blog2.html" class="dropdown-item"><span>Blog 2</span></a></li>
-                            <li><a href="post.html" class="dropdown-item"><span>Post Page</span></a></li>
+                            <li><a href="#" class="dropdown-item"><span>Blog 1</span></a></li>
+                            <li><a href="#" class="dropdown-item"><span>Blog 2</span></a></li>
+                            <li><a href="#" class="dropdown-item"><span>Post Page</span></a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -127,27 +127,32 @@
         </div>
     </section>
     <!-- Promo Video -->
-    <section class="video-wrapper video section-padding bg-img bg-fixed" data-overlay-dark="5" data-background="img/slider/1.jpg">
+    <section class="video-wrapper video section-padding bg-img bg-fixed" data-overlay-dark="6" data-background="img/clients/10.jpeg">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-12 text-center"> 
-                   <span><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i></span>
-                    <div class="section-subtitle"><span>Patara Resort & Spa Hotel</span></div>
-                    <div class="section-title"><span>Hotel Promotional Video</span></div>
+                <div class="col-lg-8 col-md-12 text-center">
+                    <span><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i><i class="star-rating"></i></span>
+                    <div class="section-subtitle"><span>CLAIRVOYANT</span></div>
+                    <div class="section-title"><span>Clairvoyant Promotional Video</span></div>
                 </div>
             </div>
             <div class="row">
                 <div class="text-center col-md-12">
-                    <a class="vid" href="https://youtu.be/QTwg1l8FqXw">
-                        <div class="vid-butn"> <span class="icon">
+                    <div class="video-container">
+                        <div class="play-button" onclick="toggleVideo()">
+                            <span class="icon">
                                 <i class="ti-control-play"></i>
-                            </span> </div>
-                    </a>
+                            </span>
+                        </div>
+                        <div class="video-frame" id="videoFrame" style="display:none;">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/-E-jfcoR2W0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Team -->
+    <!--Our Team -->
     <section class="team section-padding">
         <div class="container">
             <div class="row mb-30">
@@ -155,7 +160,7 @@
                     <div class="sub-title border-bot-light">Our Seniors</div>
                 </div>
                 <div class="col-md-9">
-                    <div class="section-title">Hotel Team</div>
+                    <div class="section-title">CRM TEAM</div>
                 </div>
             </div>
             <div class="row">
@@ -181,8 +186,8 @@
                                 </ul>
                             </div>
                             <div class="info-text">
-                                <h4>Daniel Arman</h4>
-                                <p>Hotel Manager</p>
+                                <h4>Denis Tangaso</h4>
+                                <p>CRM Manager</p>
                             </div>
                         </div>
                     </div>
@@ -206,8 +211,8 @@
                                 </ul>
                             </div>
                             <div class="info-text">
-                                <h4>Rebecca Dan</h4>
-                                <p>Front Office</p>
+                                <h4></h4>
+                                <p>ICT ADMIN</p>
                             </div>
                         </div>
                     </div>
@@ -231,7 +236,7 @@
                                 </ul>
                             </div>
                             <div class="info-text">
-                                <h4>Cate Blanche</h4>
+                                <h4>Boniface Ondara</h4>
                                 <p>Administrator</p>
                             </div>
                         </div>
@@ -242,56 +247,7 @@
         </div>
     </section>
   
-    <!-- Amenities -->
-    <section class="amenities section-padding">
-        <div class="container">
-            <div class="row mb-30">
-                <div class="col-md-3">
-                    <div class="sub-title border-bot-light">Our Services</div>
-                </div>
-                <div class="col-md-9">
-                    <div class="section-title">Hotel Amenities</div>
-                    <p>Hotel ut nisl quam nestibulum ac quam nec odio elementum sceisue the aucan ligula. Orci varius natoque penatibus et magnis dis parturient monte nascete ridiculus mus nellentesque habitant morbine.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="owl-carousel owl-theme">
-                        <div class="item"> <span class="number">01</span>
-                            <div class="icon"><i class="flaticon-world"></i></div>
-                            <h5><a href="#">Pick Up &amp; Drop</a></h5>
-                            <p>We’ll pick up from airport while you comfy on your ride, mus nellentes.</p>
-                        </div>
-                        <div class="item"> <span class="number">02</span>
-                            <div class="icon"><i class="flaticon-car"></i></div>
-                            <h5><a href="#">Parking Space</a></h5>
-                            <p>Fusce tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
-                        </div>
-                        <div class="item"> <span class="number">03</span>
-                            <div class="icon"><i class="flaticon-bed"></i></div>
-                            <h5><a href="#">Room Service</a></h5>
-                            <p>Room tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
-                        </div>
-                        <div class="item"> <span class="number">04</span>
-                            <div class="icon"><i class="flaticon-swimming"></i></div>
-                            <h5><a href="#">Swimming Pool</a></h5>
-                            <p>Swimming pool tincidunt nise ace the park norttito sit space mus miss.</p>
-                        </div>
-                        <div class="item"> <span class="number">05</span>
-                            <div class="icon"><i class="flaticon-wifi"></i></div>
-                            <h5><a href="#">Fibre Internet</a></h5>
-                            <p>Wifi tincidunt nis ace park norttito sit amet space, mus nellentesque habitant.</p>
-                        </div>
-                        <div class="item"> <span class="number">06</span>
-                            <div class="icon"><i class="flaticon-breakfast"></i></div>
-                            <h5><a href="#">Breakfast</a></h5>
-                            <p>Eat tincidunt nisa ace park norttito sit amet space, mus nellentesque habitant</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+ 
     <!-- Clients -->
     <section class="clients">
         <div class="container">
@@ -332,24 +288,21 @@
                     <div class="col-md-4 offset-md-1">
                         <div class="item">
                             <h3>Get in touch</h3>
-                            <p>1616 Broadway NY, New York 10001
-                                <br>United States of America.
+                            <p>Nairobi Kenya
+                                <br>Nairobi Kenya.
                             </p>
-                            <p class="phone">+1 203 123 0606</p>
-                            <p class="mail">info@hotel.com</p>
+                            <p class="phone">+254710704300</p>
+                            <p class="mail">Tangasod@CRMConsulting.co.ke</p>
                             <div class="social mt-2"> <a href="index.html"><i class="ti-twitter"></i></a> <a href="index.html"><i class="ti-instagram"></i></a> <a href="index.html"><i class="ti-linkedin"></i></a> </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="item">
-                            <h3>Rooms & Suites</h3>
+                            <h3>Risk Guidance</h3>
                             <ul class="footer-explore-list list-unstyled">
-                                <li><a href="rooms.html">Junior Room</a></li>
-                                <li><a href="rooms.html">Family Room</a></li>
-                                <li><a href="rooms.html">Double Room</a></li>
-                                <li><a href="rooms.html">Deluxe Room</a></li>
-                                <li><a href="rooms.html">Superior Room</a></li>
-                                <li><a href="rooms.html">King Suite</a></li>
+                                <li><a href="index.html">Improvement report</a></li>
+                                <li><a href="index.html">Descriptive and/or underwriting report</a></li>
+                  
                             </ul>
                         </div>
                     </div>
@@ -389,6 +342,7 @@
     <script src="js/smooth-scroll.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="js/promovideo.js"></script>
 </body>
 
 <!-- Mirrored from duruthemes.com/demo/html/patara/multipage-light/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 22 Jan 2024 22:18:56 GMT -->
