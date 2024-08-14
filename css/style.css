@@ -816,7 +816,7 @@ color: #aa8453;
 }
 .sub-title {
     font-family: 'Outfit', sans-serif;
-    color: #1b1b1b;
+    color: #1603c0;
     text-transform: uppercase;
     font-weight: 300;
     line-height: 1.5em;
@@ -1914,18 +1914,26 @@ hr {
     display: block;
     margin-bottom: 15px;
 }
-.rooms1-img {
+.crmc-img1 {
     position: relative;
     display: block;
     overflow: hidden;
     z-index: 1;
+    height: 50vh;
 }
-.rooms1-img img {
+.crmc-img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+
+}
+.crmc-img img {
     width: 100%;
     transform: scale(1);
     transition: transform 500ms ease;
 }
-.rooms1-single:hover .rooms1-img img {
+.rooms1-single:hover .crmc-img img {
     transform: scale(1.05);
 }
 .rooms1-content {
@@ -5521,15 +5529,41 @@ font-size: 15px;
   vertical-align: middle;
     outline: none;
 }
+/*promotional video*/
+.video-container {
+    position: relative;
+    display: inline-block;
+}
 
+.play-button {
+    cursor: pointer;
+}
+
+.video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.bg-img {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 0; /* Adjust padding if needed */
+}
 
 /* ======= Footer style ======= */
 .footer {
     padding: 90px 0 0;
     position: relative;
    border-top: 1px solid rgba(0,0,0,0.05);
-    background: #1b1b1b;
+    background: #413434;
+  
 }
+
 .footer .top {}
 .footer .top .item h3 {
     position: relative;
